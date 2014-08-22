@@ -6,6 +6,7 @@ gem 'guard-rspec'
 gem 'factory_girl_rails'
 gem 'capybara'
 gem 'bootstrap-generators'
+gem 'omniauth-github'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
