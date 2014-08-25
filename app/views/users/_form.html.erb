@@ -36,6 +36,8 @@
   <% if @user.omniauth %>
     <%= f.hidden_field :omniauth %>
   <% else %>
+    <% f.hidden_field :omniauth, value: false %>
+
     <div class="form-group">
       <%= f.label :password, :class => "col-sm-2 control-label" %>
       <div class="col-sm-10">
@@ -51,8 +53,6 @@
     </div>
   <% end %>
 
-    <% f.label :omniauth, :class => "col-sm-2 control-label" %>
-      <% f.hidden_field :omniauth, value: false, :class => "form-control" %>
 
 
   <div class="form-group">

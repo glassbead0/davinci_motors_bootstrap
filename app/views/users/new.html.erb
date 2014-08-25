@@ -7,13 +7,14 @@
       </div>
         <div class="col-xs-4 col-xs-offset-2">
           <h1>Signup</h1>
+        </div>
     <% else %>
       <div class="col-xs-10 col-xs-offset-2 center-block">
         <h1>Verify Details</h1>
     <% end %>
 
-      </div>
-    <%= render 'form' %>
+
+    <%= render 'users/form' %>
 
     <%= link_to users_path, :class => 'btn btn-default col-sm-offset-2' do %>
       <span class="glyphicon glyphicon-list-alt"></span>
